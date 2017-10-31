@@ -1,0 +1,67 @@
+h1{
+  text-align: center;
+  font-family: 'Fascinate Inline', cursive;
+
+}
+button:focus {
+	outline:0;
+}
+
+#yes{
+  margin:auto;
+  display:block;
+  border-radius: 12px;
+  padding: 10px;
+  width: 20%;
+}
+
+#counter{
+  height: 150px;
+  width: 20%;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+#randomNumber{
+  height: 100px;
+  width: 50%;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#myform{
+  height: 100px;
+  width: 50%;
+  margin: 0 auto;
+}
+.ui{
+  text-align: center;
+  width: 50%;
+  height: 30%;
+  float: left;
+  padding: 10px;
+}
+#submit{
+  float: right;
+  padding: 2%;
+    border-radius: 12px;
+}
+#userAnswer{
+  text-align: center;
+  font-size: 50px;
+  margin-top: -5%;
+  background-color: green;
+}
+#all{
+  width: 5%;
+  background-color: green;
+}
+#lvl{
+  float: right;
+}
+#thing{
+  float: left;
+}

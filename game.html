@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Game</title>
+
+ <link rel="stylesheet" href="style.css?v=1.0">
+<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+</head>
+
+<body>
+  <div id= "all">
+ <div id="thing">Level:  </div>
+ <div id="lvl"> </div>
+ </div>
+
+  <h1>Can You Remember The Numbers?</h1>
+   <button id = "yes" onclick="init()">Yes</button>
+
+    <div id="randomNumber"></div>
+    <div id = "userAnswer"> </div>
+    <button id = "ok" onclick="init()">Yes</button>
+
+     <div id="counter"></div>
+
+    <form id="myform">
+<input type="text" placeholder="-" name="userinput" id="userinput" maxlength="4" autocomplete="off" class ="ui"/>
+<input type ="submit" name="submit" id="submit" class="button"/>
+</form>
+
+       <script src="game.js"></script>
+</body>
+</html>
