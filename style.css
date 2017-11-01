@@ -65,3 +65,26 @@ button:focus {
 #thing{
   float: left;
 }
+
+#overlay{
+  position:absolute;
+  background:white;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index:1
+}
+#dificulty{
+  padding: 10%;
+}
+.Dbtn{
+  font-size: 30px;
+  padding-top: 10%;
+  border: none;
+  background-color: white;
+  margin-left: 17%;
+}
+.Dbtn:hover{
+  color: red;
+}

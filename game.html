@@ -11,6 +11,16 @@
 </head>
 
 <body>
+  <div id="overlay">
+    <div id="dificulty">
+      <h1>Can You Remember The Numbers?</h1>
+      <button class = "Dbtn" id ="Dbtn" value ="3" onclick="clearOverlay()">Easy</button>
+      <button class = "Dbtn" id ="Dbtn" value ="6" onclick="clearOverlay()">Medium</button>
+      <button class = "Dbtn" id ="Dbtn" value ="10" onclick="clearOverlay()">Difficult</button>
+      <div id="bb"> </div>
+    </div>
+  </div>
+
   <div id= "all">
  <div id="thing">Level:  </div>
  <div id="lvl"> </div>
@@ -21,7 +31,6 @@
 
     <div id="randomNumber"></div>
     <div id = "userAnswer"> </div>
-    <button id = "ok" onclick="init()">Yes</button>
 
      <div id="counter"></div>
 

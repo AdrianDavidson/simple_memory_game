@@ -1,22 +1,28 @@
 var timer;
-var numberOfLevels = 5;
+var numberOfLevels = 2;
 var counter;
 var number;
 var lvlcounter = 1;
 
+// var easy = 3;
+// var medium = 6;
+// var hard = 10;
+
 document.getElementById("myform").style.visibility = "hidden";
-document.getElementById("ok").style.visibility = "hidden";
 function init()
 {
   counter = numberOfLevels;
   document.getElementById('counter').innerHTML = counter-1;
   document.getElementById("counter").style.visibility = "visible";
-  timer = setInterval(decTime, 800);
+  timer = setInterval(decTime, 1000);
   document.getElementById("randomNumber").style.visibility = "visible";
   document.getElementById("yes").style.visibility = "hidden";
   document.getElementById("myform").style.visibility = "hidden";
   number = Math.floor(Math.random()*1000 + 1000);
   document.getElementById("randomNumber").innerHTML = number;
+}
+function clearOverlay(){
+  document.getElementById("overlay").style.visibility = "hidden";
 }
 
 function decTime()
@@ -33,10 +39,6 @@ function decTime()
     document.getElementById("randomNumber").style.visibility = "hidden";
     document.getElementById("myform").style.visibility = "visible";
     return;
-  }
-  if(counter === 0)
-  {
-    document.getElementById('counter').innerHTML = "GAME OVER";
   }
 }
 
@@ -57,10 +59,6 @@ function game(user, number){
 
     }else if (user != number) {
         document.getElementById("userAnswer").innerHTML= "sorry please guess again";
-        setTimeout(function(){
-          document.getElementById("userAnswer").innerHTML= "";
-          document.getElementById("yes").style.visibility = "visible";
-        },1000);
     }
 }
 
@@ -68,6 +66,7 @@ document.getElementById('myform').addEventListener('submit', function(e){
     var user = document.getElementById("userinput").value;
 
     game(user, number);
+    document.getElementById('userinput').value = "";
 
     e.preventDefault();
 });
