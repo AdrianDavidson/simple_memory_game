@@ -7,16 +7,19 @@
   <title>Game</title>
 
  <link rel="stylesheet" href="style.css?v=1.0">
-<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow" rel="stylesheet"></head>
 
 <body>
   <div id="overlay">
     <div id="dificulty">
-      <h1>Can You Remember The Numbers?</h1>
-      <button class = "Dbtn" id ="Dbtn" value ="3" onclick="clearOverlay()">Easy</button>
-      <button class = "Dbtn" id ="Dbtn" value ="6" onclick="clearOverlay()">Medium</button>
-      <button class = "Dbtn" id ="Dbtn" value ="10" onclick="clearOverlay()">Difficult</button>
+      <p>Easy = 3 levels</br>
+        Medium = 6 levels</br>
+        Hard = 10 levels
+      </p>
+      <h1>Pick a level</h1>
+      <button class = "Dbtn" id ="easy" value ="4" onclick="choice1()">Easy</button>
+      <button class = "Dbtn" id ="medium" value ="7" onclick=" choice2()">Medium</button>
+      <button class = "Dbtn" id ="hard" value ="11" onclick=" choice3()">Difficult</button>
       <div id="bb"> </div>
     </div>
   </div>

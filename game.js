@@ -1,13 +1,26 @@
 var timer;
-var numberOfLevels = 2;
+var numberOfLevels;
 var counter;
 var number;
 var lvlcounter = 1;
 
-// var easy = 3;
-// var medium = 6;
-// var hard = 10;
+// button values
+var easy = document.getElementById('easy').value;
+var medium = document.getElementById('medium').value;
+var hard = document.getElementById('hard').value;
 
+function choice1(){
+  if(easy){numberOfLevels = easy;}
+  document.getElementById("overlay").style.visibility = "hidden";
+}
+function choice2(){
+  if(medium){numberOfLevels = medium;}
+  document.getElementById("overlay").style.visibility = "hidden";
+}
+function choice3(){
+  if(hard){numberOfLevels = hard;}
+  document.getElementById("overlay").style.visibility = "hidden";
+}
 document.getElementById("myform").style.visibility = "hidden";
 function init()
 {
@@ -28,7 +41,6 @@ function clearOverlay(){
 function decTime()
 {
   counter--;
-  console.log("Counter: "+ counter);
 
   document.getElementById('counter').innerHTML = counter;
   if(counter <= 0)
@@ -40,10 +52,13 @@ function decTime()
     document.getElementById("myform").style.visibility = "visible";
     return;
   }
+  if(counter == 0){
+      document.getElementById("userAnswer").innerHTML= "FIN";
+  }
 }
 
 function lvlcount(){
-    lvlcounter++;
+    lvlcounter++
     return lvlcounter
 }
 
